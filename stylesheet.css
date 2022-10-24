@@ -1,6 +1,10 @@
 /* CSS Style sheet for Choose Your Own Adventure */
 
 body{
+	background-image: url(darkback.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-color: black;
 }
 
