@@ -1,0 +1,75 @@
+/* Spooky CSS Style Sheet*/ 
+
+body{
+	background: orange;
+}
+
+.container-fluid {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	/*background-color: hotpink;*/
+}
+
+.container {
+	width: 1170px;
+	display: grid;
+	margin: 0 auto;
+	float: center;
+	/*background-color: lightblue;*/
+}
+
+.tile{
+	background: black;
+	height: 85vh;
+	margin: 25px 25px 25px 25px;
+	padding-top:30vh;
+	border-style: solid;
+	border-radius: 35px;
+	width: 100%;
+}
+
+.tile2{
+	background: black;
+	height: 85vh;
+	margin: 25px 25px 25px 25px;
+	padding: 150px 250px 50px 250px;
+	border-style: solid;
+	border-radius: 35px;
+	float: center;
+	}
+
+.btn-group{
+	/*background: green;*/
+	display: inline;
+	margin: 200px;
+	float: center;
+	width: 100%;
+}
+
+.btn-outline-primary{
+	width: 20%;
+	margin: 12px;
+	float: center;
+
+}
+
+.btn btn-outline-primary{
+	background-color: ghostwhite;
+}
+
+.btn-check{
+	background-color: orange;
+}
+
+a{
+	display: inline-block;
+	z-index: 1;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 25px;
+	float: center;
+	text-align: center;
+	color: ghostwhite;
+}
