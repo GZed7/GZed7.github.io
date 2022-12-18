@@ -1,0 +1,762 @@
+/* CSS Style Sheet for Little Ghost */
+
+/* Colours 
+Blue:  64 160 160 190;
+Grey:  107 107 107
+White: Ghostwhite
+Orange: 215 165 106
+Brown: 64 44 22
+Light Blue: 157 190 194
+
+*/
+
+/* Fonts 
+
+H1 is @
+H4 is Inter light @ 18px
+*/
+
+
+/* Global Styles */
+	.container-fluid {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		/*background-color: hotpink;*/
+}
+
+	.container {
+		width: 1170px;
+		display: grid;
+		margin: 0 auto;
+		float: center;
+		/*background-color: lightblue;*/
+}
+
+	html {
+		box-sizing: border-box;
+	}
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	.row:before,
+	.row:after {
+		content: " ";
+		display: table;
+	}
+
+	.row:after {
+		clear: both;
+	}
+
+	.button{
+
+	}
+	/* Alex Added this to fix the width of your design 
+	and keep the browser from awkwardly scrolling horizontally */
+	* {
+		overflow-x: hidden;
+	}
+
+
+	/* Image Rules */
+	img{
+		width: 100%;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		display: inline;
+	}
+
+	body{
+		background-color: rgba(217, 217, 217, .3);
+	}
+
+	h1{
+		font-family: 'Barlow', sans-serif;
+		font-size: 40px;
+		color: ghostwhite;
+	}
+
+	h2{
+		font-family: 'Barlow', sans-serif;
+		font-size: 36px;
+		font-weight: 500;
+	}
+
+	h3{
+		font-family: 'Barlow', sans-serif;
+		font-size: 20px;
+		font-weight: 300;
+	}
+
+	h4{
+		font-family: 'Inter', sans-serif;
+		font-size: 20px;
+	}
+
+	h5{
+		font-family: 'Inter', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	h6{
+		font-family: 'Inter', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+
+	p{
+		font-family: 'Inter', sans-serif;
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+/* Responsive viewport declaration */
+@-ms-viewport {width: device-width;}
+
+@viewport {width: device-width;} 
+/* put this in for future compatibility */
+
+
+	/* Header */
+	header {
+		background-color: black;
+		height: 75px;
+		margin: 0 auto;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+		position: fixed;
+		z-index: 5;
+	}
+
+	#logo{
+		display: inline-block;
+		padding: .5rem;
+		padding-left: 0px;
+		width: 14%;
+		margin-top: 8px;
+		margin-left: 0px;
+		float: left;
+		height: 65px;
+	}
+
+	.icons{
+		width: 40px;
+		display: inline-block;
+		margin-top: 14px;
+	}
+
+	#phone{
+		color: whitesmoke;
+		display: inline-block;
+		height: 50px;
+		margin-top: 0px;
+	}
+
+	.contact a{
+		text-decoration: none;
+		display: inline-block;
+		float: right;
+		margin-left: 20px;
+	}
+
+	.contact h5{
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+
+	.contact{
+		margin-top: 5px;
+		margin-bottom: 0px;
+	}
+
+	
+
+
+	/* Nav buttons section */
+	.nav-menu-button{
+		background-color: ghostwhite;
+		width: 175px;
+		display: inline-grid;
+		margin-top: 15px;
+		z-index: 4;
+	}
+
+
+.nav-menu-button h5{
+	height: 20px;
+}
+	.nav-menu-button:hover{
+		background-color: rgb(64, 160, 190);
+		color: ghostwhite;
+	}
+
+	.nav-menu-button a{
+		text-decoration: none;
+		color: #000;
+	}
+
+	.nav-menu-button a:hover{
+		color: ghostwhite;
+	}
+
+	#navigation-stack{
+		width: 100vw;
+	}
+
+	.navigation{
+		width: 100%;
+		position: fixed;
+		display: grid;
+		margin-left: 0px;
+		float: right;
+		margin-top: 35vh;
+		justify-content: end; /* Alex Added this to align the nav on the right, Thank you! */
+	}
+
+	#menu-button{
+		border-radius: 50px 0px 0px 50px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	}
+
+	#crayons-button{
+		border-radius: 50px 0px 0px 50px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	}
+
+	#aboutus-button{
+		border-radius: 50px 0px 0px 50px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	}
+
+
+/* Footer */
+	footer{
+		background-color: #000;
+		grid-template-columns: 300px 300px 300px;
+		display: grid;
+		padding-left: 150px;
+		height: 250px;
+}
+
+	footer h6{
+		text-decoration: none;
+		color: ghostwhite;
+	}
+
+	footer a{
+		color: ghostwhite;
+		text-decoration: none;
+	}
+
+.icons-footer{
+		width: 30px;
+		display: inline-block;
+		margin-top: 14px;
+		margin-right: 5px;
+}
+
+
+
+/* ********************************INDEX PAGE STARTS HERE */
+/* Hero Section */
+#hero{
+	height: 90vh;
+	background-image: url("images/background.png");
+	background-size: cover;
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 100vw;
+}
+
+#hero h5{
+	background-color: rgb(64, 160, 190);
+	color: ghostwhite;
+	height: 60px;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+#date{
+	height: 80px;
+	margin-top: 75px;
+}
+
+#hero-chunk{
+		max-width: 50vw;
+		color: #fff;
+		margin-top: 25vh;
+		margin-left: 180px;
+		text-align: left;
+}
+
+
+
+/* Ghost Hunt Section */
+
+#ghost-pic1{
+	width: 110px;
+	display: grid;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+	margin-top: 15px;
+	z-index: -1;
+}
+
+#ghost-pic2{
+	width: 110px;
+	margin-top: -130px;
+	display: grid;
+	position: relative;
+	float: right;
+	z-index: -1;
+	margin-right: 220px;
+}
+
+
+	#ghosthunt-text h3{
+		color: rgb(64, 160, 190);
+		margin-top: 20px;
+		text-align: center;
+		width: 70vw;
+		display: grid;
+
+	}
+
+	#ghosthunt-text{
+		margin: 0 auto;
+	}
+
+	#ghosthunt-section{
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+
+
+
+/* Clue Section */
+#clues{
+	background-color: rgb(215, 165, 106);
+	height: 320px;
+	width: 80vw;
+	float: left;
+	display: inline;
+	margin-bottom: 40px;
+	margin-top: -80px;
+	margin-right: 100px;
+	margin-left: 0px;
+	padding:  80px;
+}
+
+#clues h3{
+	text-align: left;
+	color: ghostwhite;
+}
+
+#clues p{
+	text-align: left;
+	color: ghostwhite;
+}
+
+.next-clue{
+	text-align: left;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 30px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: .6em;
+	padding-bottom: .6em;
+	float: left;
+	margin-top: 20px;
+	color: ghostwhite;
+}
+
+
+
+/* Menu Section */
+#menu{
+	background-color: black;
+	height: 100%;
+	margin-top: 20px;
+	width: 100vw;
+}
+
+.menu-button{
+	text-align: left;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 30px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: .6em;
+	padding-bottom: .6em;
+	margin-top: 20px;
+	color: ghostwhite;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	display: inline;
+}
+
+#menu img{
+	width: 14%;
+	height: 100%;
+	display: inline-grid;
+	margin: 0 auto;
+	object-fit: fill;
+}
+
+#coffee-photos{
+	width: 100vw;
+	margin-bottom: 10px;
+}
+
+#menu a{
+	display: inline-block;
+}
+
+#menu-mobile{
+	display: none;
+}
+
+
+/* Crayons Section */
+
+	#crayons {
+		color: #000;
+		width: 70vw;
+		height: 350px;
+		padding-left: 0;
+
+
+		grid-template-columns: 450px 670px;
+		display: grid;
+		margin: 0 auto;
+		margin-top: 90px;
+		column-gap: 30px;
+		margin-bottom: 200px;
+	}
+
+	.card-chunk{
+		margin-top: 50px;
+	}
+
+	#crayons img{
+		width: 100%;
+		display: inline-flex;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	#crayon-picture{
+		height: 268px;
+		width: 400px;
+		border-radius: 30px;
+		border-style: none;
+		padding-bottom: 110px;
+		display: grid;
+		object-position: center;
+	}
+
+	.browse-button{
+	text-align: center;
+	width: 200px;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	border-style: solid;
+	border-color: rgb(64, 160, 190);
+	border-width: 2px;
+	border-radius: 30px;
+
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: .6em;
+	padding-bottom: .6em;
+	color: ghostwhite;
+	margin: 0 auto;
+
+	background-color: rgb(64, 160, 190);
+	}
+	
+
+
+/* Gallery Section */
+
+	#gallery{
+		background-color: rgb(64, 160, 190);
+		color: #fff;
+		width: 40vw;
+		height: 150px;
+		border-radius: 18px;
+
+		margin: 0 auto;
+		margin-top: 50px;
+		column-gap: 30px;
+		margin-bottom: 20px;
+		z-index: 1;
+		margin-top: 150px;
+	}
+
+	#collage{
+		margin-top: -490px;
+		display: block;
+		z-index: -1;
+		margin-bottom: 0px;
+	}
+
+	.card-chunk-gallery{
+		padding-top: 15px;
+		width: 30vw;
+		margin: 0 auto;
+	}
+
+	.card-chunk-gallery p{
+		margin-top: 0px;
+	}
+
+/* ****************** Interior Page ********************** */
+
+/* Hero-Interior Section */
+#crayon-hero{
+	height: 53.5vh;
+	background-image: url("images/background.png");
+	background-size: cover;
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 100vw;
+}
+
+#crayon-hero h5{
+	background-color: rgb(64, 160, 190);
+	color: ghostwhite;
+	height: 60px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+
+#crayon-hero-chunk{
+		max-width: 50vw;
+		color: #fff;
+		margin-top: 20vh;
+		margin-left: 180px;
+		text-align: left;
+}
+
+/* Crayon-Interior Section */
+
+.crayon-pack{
+		background-color: rgb(64, 44, 22);
+		color: #000;
+		width: 65vw;
+		height: 350px;
+		padding-left: 50px;
+		grid-template-columns: 450px 670px;
+		display: grid;
+		margin: 0 auto;
+		margin-top: 30px;
+		column-gap: 30px;
+
+		border-style: none;
+		border-radius: 30px;
+}
+
+#orange-pack{
+	background-color: rgb(215, 165, 106);
+}
+
+#blue-pack{
+	background-color: rgb(157, 190, 194);
+	margin-bottom: 50px;
+}
+
+.crayon-pack-text h3{
+	height: 30px;
+}
+
+.crayon-pack-text {
+	margin-top: 90px;
+	color: ghostwhite;
+}
+
+.crayon-types{
+	width: 100%;
+	height: 100%;
+	float: left;
+	display: grid;
+	grid-template-columns: 100px 100px;
+	grid-column-gap: 40px;
+	margin-left: 25px;
+	padding-left: 20px;
+	background-color: ghostwhite;
+}
+
+.crayon-types img{
+	width: 80px;;
+	height: 80px;
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	margin-top: 30px;
+
+}
+
+.crayon-types p{
+	width: 100px;
+	height: 18px;
+	margin: 0px;
+	margin-top: 1px;
+	text-align: center;
+}
+
+
+
+
+
+/*************** Media Queries *************/
+
+@media only screen and (max-width: 600px) {
+
+	/* Header rules*/
+	#phone{
+		display: none;
+	}
+
+	.icons{
+		display: none;
+	}
+
+
+	/* Hero rules*/
+	#hero-chunk{
+		margin-left: 50px;
+		margin-top: 80px;
+		padding-right: 0px;
+		margin-right: 0px;
+		max-width: 80vw
+	}
+
+	#hero-chunk h1{
+		width: 100%;
+	}
+
+	#hero{
+		height: 70vh;
+	}
+
+
+
+	/* Naviagtion rules*/
+	#navigation-stack{
+		display: none;
+	}
+
+	/*Ghosthunt rules*/
+	#ghost-pic2{
+		display: none;
+	}
+
+	#ghost-pic1{
+		display: inline-block;
+		margin-top: 0px;
+		margin-left: 15px;
+	}
+
+	#ghosthunt-text h3{
+		font-size: 15px;
+		margin-left: 10px;
+		text-align: left;
+	}
+
+	/*Clue rules*/
+	#clues{
+		width: 100%;
+	}
+
+	/*Menu rules*/
+	#menu img{
+		width: 20%;
+	}
+
+	/*Crayons*/
+	#crayons{
+		display: inline;
+		margin-left: 30px;
+		width: 300px;
+		height: 530px;
+		margin-top: 10px;
+	}
+
+	#crayon-picture{
+		width: 300px;
+	}
+
+	/*Footer rules*/
+	footer{
+		padding-left: 10px;
+		grid-template-columns: 135px 190px ;
+		height: 310px;
+	}
+
+	/* Interior hero rules*/
+	#crayon-hero-chunk{
+		margin-left: 50px;
+		margin-top: 80px;
+		padding-right: 0px;
+		margin-right: 0px;
+		max-width: 80vw
+	}
+
+	#crayon-hero{
+		height: 35vh;
+	}
+
+	/* Interior crayon rules */
+	.crayon-pack-text{
+		width: 270px;
+		margin-top: 20px;
+		margin-bottom: 32px;
+	}
+
+	.crayon-pack{
+		padding-left: 35px;
+		display: inline-block;
+		width: 85vw;
+		margin: 0auto;
+		margin-left: 30px;
+		height: 512px;
+	}
+
+	.crayon-types{
+		height: auto;
+		padding-bottom: 10px;
+		width: 100vw;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-left: -35px;
+	}
+
+
+}
+
+
+
+
